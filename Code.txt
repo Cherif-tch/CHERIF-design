@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHERIF TCH - Le Meilleur de la Qualité</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#15B8A6", secondary: "" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      background-color: #121212;
+      color: #f5f5f5;
+      }
+      .gold-text {
+      color: #D4AF37;
+      }
+      .custom-checkbox {
+      appearance: none;
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 2px solid #D4AF37;
+      border-radius: 4px;
+      background-color: transparent;
+      position: relative;
+      }
+      .custom-checkbox:checked {
+      background-color: #D4AF37;
+      }
+      .custom-checkbox:checked::after {
+      content: "";
+      position: absolute;
+      top: 0.2rem;
+      left: 0.35rem;
+      width: 0.4rem;
+      height: 0.7rem;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+      .product-image {
+      transition: transform 0.3s ease;
+      }
+      .product-image:hover {
+      transform: scale(1.05);
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <header class="w-full bg-black border-b border-gray-800">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <div class="text-3xl font-['Pacifico'] gold-text">CHERIF TCH</div>
+          <div class="ml-2 text-xs text-gray-400">
+            LE MEILLEUR DE LA QUALITÉ
+          </div>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-white hover:text-primary transition-colors"
+            >Accueil</a
+          >
+          <a href="#" class="text-white hover:text-primary transition-colors"
+            >Produits</a
+          >
+          <a href="#" class="text-white hover:text-primary transition-colors"
+            >Services</a
+          >
+          <a href="#" class="text-white hover:text-primary transition-colors"
+            >À Propos</a
+          >
+          <a href="#" class="text-white hover:text-primary transition-colors"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center space-x-4">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <i class="ri-search-line text-white ri-lg"></i>
+          </div>
+          <div class="w-10 h-10 flex items-center justify-center">
+            <i class="ri-shopping-cart-line text-white ri-lg"></i>
+          </div>
+          <div class="w-10 h-10 flex items-center justify-center md:hidden">
+            <i class="ri-menu-line text-white ri-lg"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="py-12 md:py-20">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row gap-12">
+            <div class="w-full md:w-1/2">
+              <div class="bg-gray-900 rounded-lg p-4 mb-4">
+                <img
+                  src="https://readdy.ai/api/search-image?query=professional%20black%20t-shirt%20with%20gold%20CHERIF%20TCH%20logo%20on%20a%20neutral%20background%2C%20high%20quality%20product%20photography%2C%20studio%20lighting%2C%20fashion%20photography%2C%20minimalist&width=600&height=600&seq=1&orientation=squarish"
+                  alt="T-shirt CHERIF TCH"
+                  class="w-full h-auto object-cover rounded product-image"
+                />
+              </div>
+              <div class="grid grid-cols-4 gap-2">
+                <div
+                  class="bg-gray-900 rounded p-2 cursor-pointer hover:border hover:border-primary"
+                >
+                  <img
+                    src="https://readdy.ai/api/search-image?query=black%20t-shirt%20front%20view%20with%20gold%20CHERIF%20TCH%20logo%2C%20product%20photography&width=150&height=150&seq=2&orientation=squarish"
+                    alt="Vue avant"
+                    class="w-full h-auto object-cover rounded"
+                  />
+                </div>
+                <div
+                  class="bg-gray-900 rounded p-2 cursor-pointer hover:border hover:border-primary"
+                >
+                  <img
+                    src="https://readdy.ai/api/search-image?query=black%20t-shirt%20back%20view%2C%20product%20photography&width=150&height=150&seq=3&orientation=squarish"
+                    alt="Vue arrière"
+                    class="w-full h-auto object-cover rounded"
+                  />
+                </div>
+                <div
+                  class="bg-gray-900 rounded p-2 cursor-pointer hover:border hover:border-primary"
+                >
+                  <img
+                    src="https://readdy.ai/api/search-image?query=close-up%20of%20gold%20CHERIF%20TCH%20logo%20on%20black%20fabric%2C%20detailed%20texture%2C%20product%20photography&width=150&height=150&seq=4&orientation=squarish"
+                    alt="Détail logo"
+                    class="w-full h-auto object-cover rounded"
+                  />
+                </div>
+                <div
+                  class="bg-gray-900 rounded p-2 cursor-pointer hover:border hover:border-primary"
+                >
+                  <img
+                    src="https://readdy.ai/api/search-image?query=black%20t-shirt%20fabric%20texture%20close-up%2C%20high%20quality%20cotton%20material%2C%20product%20photography&width=150&height=150&seq=5&orientation=squarish"
+                    alt="Détail tissu"
+                    class="w-full h-auto object-cover rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <h1 class="text-3xl font-bold mb-2 gold-text">
+                T-shirt CHERIF TCH Édition Limitée
+              </h1>
+              <div class="flex items-center mb-4">
+                <div class="flex">
+                  <i class="ri-star-fill text-yellow-400"></i>
+                  <i class="ri-star-fill text-yellow-400"></i>
+                  <i class="ri-star-fill text-yellow-400"></i>
+                  <i class="ri-star-fill text-yellow-400"></i>
+                  <i class="ri-star-half-fill text-yellow-400"></i>
+                </div>
+                <span class="ml-2 text-gray-400">(42 avis)</span>
+              </div>
+              <div class="text-2xl font-bold mb-6">39,000 FCFA</div>
+              <p class="text-gray-300 mb-6">
+                Notre t-shirt emblématique CHERIF TCH est fabriqué à partir de
+                coton biologique de première qualité, offrant un confort
+                exceptionnel et une durabilité inégalée. Le logo doré élégant
+                représente notre engagement envers l'excellence et le style
+                contemporain.
+              </p>
+              <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Taille</h3>
+                <div class="flex flex-wrap gap-2" id="size-buttons">
+                  <button
+                    id="size-S"
+                    class="px-4 py-2 border border-gray-600 rounded-button hover:border-primary whitespace-nowrap"
+                    data-size="S"
+                  >
+                    S
+                  </button>
+                  <button
+                    id="size-M"
+                    class="px-4 py-2 border border-gray-600 rounded-button hover:border-primary whitespace-nowrap"
+                    data-size="M"
+                  >
+                    M
+                  </button>
+                  <button
+                    id="size-L"
+                    class="px-4 py-2 border border-gray-600 rounded-button hover:border-primary whitespace-nowrap"
+                    data-size="L"
+                  >
+                    L
+                  </button>
+                  <button
+                    id="size-XL"
+                    class="px-4 py-2 border border-gray-600 rounded-button hover:border-primary whitespace-nowrap"
+                    data-size="XL"
+                  >
+                    XL
+                  </button>
+                  <button
+                    id="size-XXL"
+                    class="px-4 py-2 border border-gray-600 rounded-button hover:border-primary whitespace-nowrap"
+                    data-size="XXL"
+                  >
+                    XXL
+                  </button>
+                </div>
+                <p
+                  id="size-availability"
+                  class="mt-2 text-sm text-gray-400"
+                ></p>
+              </div>
+              <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Couleur</h3>
+                <div class="flex gap-2">
+                  <button
+                    class="w-10 h-10 bg-black border-2 border-primary rounded-full"
+                  ></button>
+                  <button
+                    class="w-10 h-10 bg-gray-700 border border-gray-600 rounded-full"
+                  ></button>
+                  <button
+                    class="w-10 h-10 bg-white border border-gray-600 rounded-full"
+                  ></button>
+                  <button
+                    class="w-10 h-10 bg-blue-900 border border-gray-600 rounded-full"
+                  ></button>
+                </div>
+              </div>
+              <div class="mb-6">
+                <h3 class="text-lg font-semibold mb-2">Quantité</h3>
+                <div
+                  class="flex items-center w-32 border border-gray-600 rounded"
+                >
+                  <button
+                    class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white"
+                  >
+                    <i class="ri-subtract-line"></i>
+                  </button>
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="w-12 h-10 bg-transparent text-center border-none focus:outline-none text-white"
+                  />
+                  <button
+                    class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white"
+                  >
+                    <i class="ri-add-line"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <button
+                  class="px-6 py-3 bg-primary text-white font-semibold rounded-button hover:bg-opacity-90 flex items-center justify-center whitespace-nowrap"
+                >
+                  <i class="ri-shopping-cart-line mr-2"></i>
+                  Ajouter au panier
+                </button>
+                <button
+                  class="px-6 py-3 border border-primary text-primary font-semibold rounded-button hover:bg-primary hover:bg-opacity-10 flex items-center justify-center whitespace-nowrap"
+                >
+                  <i class="ri-heart-line mr-2"></i>
+                  Ajouter aux favoris
+                </button>
+              </div>
+              <div class="border-t border-gray-800 pt-6">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center">
+                    <i class="ri-truck-line text-primary ri-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Livraison gratuite</h4>
+                    <p class="text-sm text-gray-400">
+                      Pour toute commande supérieure à 60000 FCFA
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center">
+                    <i class="ri-refresh-line text-primary ri-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Retours sous 30 jours</h4>
+                    <p class="text-sm text-gray-400">Satisfait ou remboursé</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 flex items-center justify-center">
+                    <i class="ri-shield-check-line text-primary ri-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Garantie qualité</h4>
+                    <p class="text-sm text-gray-400">
+                      Produits testés et approuvés
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 bg-gray-900">
+        <div class="container mx-auto px-4">
+          <div class="flex border-b border-gray-800 mb-8">
+            <button
+              class="px-6 py-3 border-b-2 border-primary text-white font-semibold whitespace-nowrap"
+            >
+              Description
+            </button>
+            <button
+              class="px-6 py-3 text-gray-400 hover:text-white whitespace-nowrap"
+            >
+              Caractéristiques
+            </button>
+            <button
+              class="px-6 py-3 text-gray-400 hover:text-white whitespace-nowrap"
+            >
+              Avis (42)
+            </button>
+            <button
+              class="px-6 py-3 text-gray-400 hover:text-white whitespace-nowrap"
+            >
+              Guide des tailles
+            </button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold mb-4 gold-text">
+                Détails du produit
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Le t-shirt CHERIF TCH est bien plus qu'un simple vêtement. C'est
+                une déclaration de style et de qualité. Fabriqué à partir de
+                coton biologique 100% certifié, ce t-shirt offre une sensation
+                de douceur incomparable contre votre peau.
+              </p>
+              <p class="text-gray-300 mb-4">
+                Notre processus d'impression utilise des encres écologiques de
+                haute qualité pour garantir que le logo doré emblématique reste
+                intact même après de nombreux lavages. Chaque détail a été
+                soigneusement pensé, des coutures renforcées au col double
+                épaisseur qui conserve sa forme parfaite.
+              </p>
+              <p class="text-gray-300">
+                Que ce soit pour une occasion décontractée ou pour afficher
+                fièrement votre soutien à la marque CHERIF TCH, ce t-shirt est
+                le choix parfait pour tous ceux qui apprécient le style, le
+                confort et la durabilité.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4 gold-text">
+                Caractéristiques
+              </h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                  >
+                    <i class="ri-checkbox-circle-line text-primary"></i>
+                  </div>
+                  <span class="text-gray-300"
+                    >100% coton biologique certifié GOTS</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                  >
+                    <i class="ri-checkbox-circle-line text-primary"></i>
+                  </div>
+                  <span class="text-gray-300">Grammage premium de 180g/m²</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                  >
+                    <i class="ri-checkbox-circle-line text-primary"></i>
+                  </div>
+                  <span class="text-gray-300"
+                    >Logo doré imprimé avec encres écologiques</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                  >
+                    <i class="ri-checkbox-circle-line text-primary"></i>
+                  </div>
+                  <span class="text-gray-300"
+                    >Col à bord côtelé double épaisseur</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                  >
+                    <i class="ri-checkbox-circle-line text-primary"></i>
+                  </div>
+                  <span class="text-gray-300"
+                    >Coutures renforcées aux épaules et au col</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                  >
+                    <i class="ri-checkbox-circle-line text-primary"></i>
+                  </div>
+                  <span class="text-gray-300">Lavable en machine à 30°C</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                  >
+                    <i class="ri-checkbox-circle-line text-primary"></i>
+                  </div>
+                  <span class="text-gray-300"
+                    >Fabriqué de manière éthique au Benin</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-8 gold-text">Produits similaires</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-gray-900 rounded-lg overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=elegant%20black%20hoodie%20with%20gold%20logo%2C%20premium%20quality%2C%20studio%20photography%20on%20dark%20background&width=300&height=300&seq=6&orientation=squarish"
+                  alt="Hoodie CHERIF TCH"
+                  class="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+                <div
+                  class="absolute top-2 right-2 w-8 h-8 bg-black bg-opacity-60 rounded-full flex items-center justify-center"
+                >
+                  <i class="ri-heart-line text-white"></i>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-1">
+                  Hoodie CHERIF TCH Premium
+                </h3>
+                <div class="flex items-center mb-2">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                  </div>
+                  <span class="ml-1 text-xs text-gray-400">(28)</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-lg font-bold"20000 FCFA</div>
+                  <button
+                    class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+                  >
+                    <i class="ri-shopping-cart-line text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-900 rounded-lg overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=black%20cap%20with%20gold%20embroidered%20logo%2C%20premium%20quality%2C%20studio%20photography%20on%20dark%20background&width=300&height=300&seq=7&orientation=squarish"
+                  alt="Casquette CHERIF TCH"
+                  class="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+                <div
+                  class="absolute top-2 right-2 w-8 h-8 bg-black bg-opacity-60 rounded-full flex items-center justify-center"
+                >
+                  <i class="ri-heart-line text-white"></i>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-1">
+                  Casquette CHERIF TCH Classic
+                </h3>
+                <div class="flex items-center mb-2">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-line text-yellow-400 text-sm"></i>
+                  </div>
+                  <span class="ml-1 text-xs text-gray-400">(19)</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-lg font-bold">15.000 FCFA</div>
+                  <button
+                    class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+                  >
+                    <i class="ri-shopping-cart-line text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-900 rounded-lg overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=black%20tote%20bag%20with%20gold%20logo%20print%2C%20premium%20quality%2C%20studio%20photography%20on%20dark%20background&width=300&height=300&seq=8&orientation=squarish"
+                  alt="Tote Bag CHERIF TCH"
+                  class="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+                <div
+                  class="absolute top-2 right-2 w-8 h-8 bg-black bg-opacity-60 rounded-full flex items-center justify-center"
+                >
+                  <i class="ri-heart-line text-white"></i>
+                </div>
+                <div
+                  class="absolute top-2 left-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded"
+                >
+                  NOUVEAU
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-1">
+                  Tote Bag CHERIF TCH Eco
+                </h3>
+                <div class="flex items-center mb-2">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-half-fill text-yellow-400 text-sm"></i>
+                  </div>
+                  <span class="ml-1 text-xs text-gray-400">(12)</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-lg font-bold">12000 FCFA</div>
+                  <button
+                    class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+                  >
+                    <i class="ri-shopping-cart-line text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-900 rounded-lg overflow-hidden group">
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://readdy.ai/api/search-image?query=black%20mug%20with%20gold%20logo%2C%20premium%20quality%2C%20studio%20photography%20on%20dark%20background&width=300&height=300&seq=9&orientation=squarish"
+                  alt="Mug CHERIF TCH"
+                  class="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                />
+                <div
+                  class="absolute top-2 right-2 w-8 h-8 bg-black bg-opacity-60 rounded-full flex items-center justify-center"
+                >
+                  <i class="ri-heart-line text-white"></i>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-semibold mb-1">
+                  Mug CHERIF TCH Signature
+                </h3>
+                <div class="flex items-center mb-2">
+                  <div class="flex">
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-fill text-yellow-400 text-sm"></i>
+                    <i class="ri-star-line text-yellow-400 text-sm"></i>
+                  </div>
+                  <span class="ml-1 text-xs text-gray-400">(23)</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-lg font-bold">16000 FCFA</div>
+                  <button
+                    class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"
+                  >
+                    <i class="ri-shopping-cart-line text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 bg-gray-900">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-8 text-center gold-text">
+            Avis clients
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+              <div class="flex mb-4">
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+              </div>
+              <p class="text-gray-300 mb-4">
+                "La qualité du tissu est exceptionnelle, très doux au toucher.
+                Le logo doré est magnifique et résiste parfaitement aux lavages.
+                Je recommande vivement ce t-shirt à tous ceux qui recherchent un
+                produit premium."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center mr-3"
+                >
+                  <span class="text-white font-semibold">MB</span>
+                </div>
+                <div>
+                  <div class="font-semibold">Mathieu Bertrand</div>
+                  <div class="text-sm text-gray-400">Client depuis 2023</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+              <div class="flex mb-4">
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-half-fill text-yellow-400"></i>
+              </div>
+              <p class="text-gray-300 mb-4">
+                "J'adore ce t-shirt ! La coupe est parfaite et le design est
+                élégant. Le seul petit bémol est que la taille est légèrement
+                plus petite que prévu, je conseille de prendre une taille
+                au-dessus si vous hésitez."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center mr-3"
+                >
+                  <span class="text-white font-semibold">SL</span>
+                </div>
+                <div>
+                  <div class="font-semibold">TCHANE Zarif</div>
+                  <div class="text-sm text-gray-400">Client depuis 2024</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+              <div class="flex mb-4">
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+                <i class="ri-star-fill text-yellow-400"></i>
+              </div>
+              <p class="text-gray-300 mb-4">
+                "Service client exceptionnel et livraison rapide. Le t-shirt est
+                exactement comme sur les photos, voire mieux en réalité. Le logo
+                doré attire tous les regards. Je vais certainement commander
+                d'autres articles de la collection."
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center mr-3"
+                >
+                  <span class="text-white font-semibold">TD</span>
+                </div>
+                <div>
+                  <div class="font-semibold">Scheyla BAHAGNANSI</div>
+                  <div class="text-sm text-gray-400">Client depuis 2022</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              class="px-6 py-3 border border-primary text-primary font-semibold rounded-button hover:bg-primary hover:bg-opacity-10 whitespace-nowrap"
+            >
+              Voir tous les avis
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <div class="bg-gray-900 rounded-lg p-8 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 gold-text">
+                  Abonnez-vous à notre newsletter
+                </h2>
+                <p class="text-gray-300 mb-6">
+                  Recevez en avant-première nos nouveautés, offres exclusives et
+                  conseils personnalisés. Inscrivez-vous dès maintenant et
+                  bénéficiez de 10% de réduction sur votre première commande.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-2">
+                  <input
+                    type="email"
+                    placeholder="Votre adresse email"
+                    class="flex-grow px-4 py-3 bg-black border border-gray-700 rounded-button focus:outline-none focus:border-primary"
+                  />
+                  <button
+                    class="px-6 py-3 bg-primary text-white font-semibold rounded-button hover:bg-opacity-90 whitespace-nowrap"
+                  >
+                    S'abonner
+                  </button>
+                </div>
+                <div class="mt-4 flex items-start">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    class="custom-checkbox mr-2 mt-1"
+                  />
+                  <label for="privacy" class="text-sm text-gray-400">
+                    En vous inscrivant, vous acceptez notre politique de
+                    confidentialité et de recevoir des emails marketing de
+                    CHERIF TCH.
+                  </label>
+                </div>
+              </div>
+              <div class="hidden md:block">
+                <img
+                  src="https://readdy.ai/api/search-image?query=elegant%20fashion%20newsletter%20subscription%20concept%2C%20gold%20and%20black%20theme%2C%20premium%20lifestyle%2C%20minimalist%20design&width=500&height=300&seq=10&orientation=landscape"
+                  alt="Newsletter"
+                  class="w-full h-auto rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="text-3xl font-['Pacifico'] gold-text mb-4">
+              CHERIF TCH
+            </div>
+            <p class="text-gray-400 mb-6">
+              La qualité et l'élégance au service de votre style. Découvrez
+              notre collection de produits premium conçus pour vous démarquer.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center"
+              >
+                <i class="ri-facebook-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center"
+              >
+                <i class="ri-instagram-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center"
+              >
+                <i class="ri-twitter-x-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center"
+              >
+                <i class="ri-youtube-fill text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4 gold-text">Liens rapides</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Produits</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">À propos</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4 gold-text">Service client</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Mon compte</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Suivi de commande</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Livraison</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Retours</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Conditions générales</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4 gold-text">Contact</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                >
+                  <i class="ri-map-pin-line text-primary"></i>
+                </div>
+                <span class="text-gray-400"
+                  > Aifa, 75008 Calavi, Benin</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                >
+                  <i class="ri-phone-line text-primary"></i>
+                </div>
+                <span class="text-gray-400">+229 99 40 8 00</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5"
+                >
+                  <i class="ri-mail-line text-primary"></i>
+                </div>
+                <span class="text-gray-400">tchanezarif27@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-500 mb-4 md:mb-0">
+              © 2025 CHERIF TCH. Tous droits réservés.
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-visa-fill text-gray-400 ri-lg"></i>
+              </div>
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-mastercard-fill text-gray-400 ri-lg"></i>
+              </div>
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-paypal-fill text-gray-400 ri-lg"></i>
+              </div>
+              <div class="w-8 h-5 flex items-center justify-center">
+                <i class="ri-apple-fill text-gray-400 ri-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Size selection functionality
+        const sizeButtons = document.querySelectorAll("#size-buttons button");
+        const sizeAvailability = document.getElementById("size-availability");
+        const stockInfo = {
+          S: 5,
+          M: 8,
+          L: 12,
+          XL: 15,
+          XXL: 3,
+        };
+        function updateSizeSelection(selectedButton) {
+          sizeButtons.forEach((button) => {
+            button.classList.remove("bg-primary", "text-white");
+            button.classList.add("border-gray-600");
+          });
+          selectedButton.classList.remove("border-gray-600");
+          selectedButton.classList.add("bg-primary", "text-white");
+          const size = selectedButton.dataset.size;
+          sizeAvailability.textContent = `${stockInfo[size]} articles disponibles`;
+        }
+        sizeButtons.forEach((button) => {
+          button.addEventListener("click", () => updateSizeSelection(button));
+        });
+        // Initialize with size L selected
+        const defaultSize = document.getElementById("size-L");
+        updateSizeSelection(defaultSize);
+        // Quantity input functionality
+        const minusBtn = document.querySelector("button:has(.ri-subtract-line)");
+        const plusBtn = document.querySelector("button:has(.ri-add-line)");
+        const quantityInput = document.querySelector('input[type="number"]');
+        minusBtn.addEventListener("click", function () {
+          const currentValue = parseInt(quantityInput.value);
+          if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+          }
+        });
+        plusBtn.addEventListener("click", function () {
+          const currentValue = parseInt(quantityInput.value);
+          quantityInput.value = currentValue + 1;
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Product image gallery
+        const thumbnails = document.querySelectorAll(".grid-cols-4 > div");
+        const mainImage = document.querySelector(
+          ".bg-gray-900.rounded-lg.p-4.mb-4 img",
+        );
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", function () {
+            const thumbnailImg = this.querySelector("img");
+            const thumbnailSrc = thumbnailImg.src;
+            // Swap images
+            const mainSrc = mainImage.src;
+            mainImage.src = thumbnailSrc;
+            thumbnailImg.src = mainSrc;
+            // Update active state
+            thumbnails.forEach((t) => t.classList.remove("border", "border-primary"));
+            this.classList.add("border", "border-primary");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
